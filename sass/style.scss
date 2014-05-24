@@ -40,11 +40,12 @@ $browser-minimum-versions: (
 @import "partials/global/functions";
 @import "partials/global/mixins";
 @import "partials/global/extends";
+@import "partials/global/fonts";
 //////////////////////////////
 
 //////////////////////////////
 // COMPONENTS
-
+@import "partials/components/base";
 //////////////////////////////
 
 //////////////////////////////

@@ -64,3 +64,17 @@ img, video {
   max-width: 100%;
   height: auto;
 }
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: "fira_sans/firasans-book.eot";
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: "fira_sans/firasans-bold.eot";
+  font-style: bold;
+}
+body {
+  font-family: "Fira Sans", "Droid Arabic Naskh", "Mplus Fulah", sans-serif;
+}

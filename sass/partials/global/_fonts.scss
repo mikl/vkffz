@@ -1,0 +1,12 @@
+// Font face configuration.
+@import "compass/css3/font-face";
+
+@include font-face("Fira Sans", font-files(
+  "fira_sans/firasans-book.woff",
+  "fira_sans/firasans-book.ttf"
+), 'fira_sans/firasans-book.eot');
+
+@include font-face("Fira Sans", font-files(
+  "fira_sans/firasans-bold.woff",
+  "fira_sans/firasans-bold.ttf"
+), 'fira_sans/firasans-bold.eot', bold);
