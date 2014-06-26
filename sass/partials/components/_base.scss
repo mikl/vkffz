@@ -1,3 +1,41 @@
 body {
   font-family: $fira-stack;
 }
+
+.site-header {
+  @include clearfix;
+  text-align: center;
+
+  @include breakpoint($bkpt-3) {
+    text-align: left;
+  }
+
+  .logo {
+    @include breakpoint($bkpt-3) {
+      @include grid-span(3, 1);
+    }
+
+    img {
+      // Half the physical dimensions of the actual image, to make it look nice
+      // on retina displays.
+      height: 117px;
+      width: 101px;
+    }
+  }
+
+  .site-name {
+    @include breakpoint($bkpt-3) {
+      @include grid-span(9, 3);
+
+      margin-top: 70px;
+    }
+
+    font-size: 300%;
+    font-weight: bold;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
