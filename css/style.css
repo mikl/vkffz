@@ -65,6 +65,11 @@ img, video {
   height: auto;
 }
 
+.standard-layout {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 @font-face {
   font-family: 'Fira Sans';
   src: url('../fonts/fira_sans/firasans-book.eot?312764400');

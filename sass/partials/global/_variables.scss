@@ -1,1 +1,9 @@
 $fira-stack: "Fira Sans", "Droid Arabic Naskh", "Mplus Fulah", sans-serif;
+
+// Singularity.gs grid configuration.
+@include add-grid(3);
+@include add-grid(6 at 500px);
+@include add-grid(9 at 700px);
+@include add-grid(12 at 900px);
+
+@include add-gutter(1/3);
