@@ -1,55 +1,25 @@
-//////////////////////////////
-// VKFFZ
-//////////////////////////////
-
-////////////////////////////
-// Cross Browser Support
-$graceful-usage-threshold: 100;
-$critical-usage-threshold: 100;
-
-$browser-minimum-versions: (
-  "ie": "9",
-  "android": "4",
-  "chrome": "31",
-  "safari": "5",
-  "firefox": "25",
-  "ios-safari": "6.0-6.1",
-  "android-chrome": "0"
-);
-////////////////////////////
-
 ////////////////////////
-// Compass Imports
-@import "compass";
-@import "compass/reset";
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
 ////////////////////////
 
 ////////////////////////
-// Compass Extensions
-@import "toolkit";
-@import "toolkit/kickstart";
-@import "breakpoint";
-@import "singularitygs";
-@import "modular-scale";
-@import "color-schemer";
+// Base Import
 ////////////////////////
+@import 'partials/global/base';
 
-//////////////////////////////
-// GLOBALS
-@import "partials/global/variables";
-@import "partials/global/functions";
-@import "partials/global/mixins";
-@import "partials/global/extends";
-@import "partials/global/fonts";
-//////////////////////////////
+////////////////////////
+// Import Style Guide
+////////////////////////
+@import 'partials/styleguide/style-guide';
 
-//////////////////////////////
-// COMPONENTS
-@import "partials/components/base";
-//////////////////////////////
+////////////////////////
+// Import Layout
+////////////////////////
+@import 'partials/layout/layout';
 
-//////////////////////////////
-// LAYOUTS
-@import "partials/layouts/standard";
-
-//////////////////////////////
+////////////////////////
+// Import Design
+////////////////////////
+@import 'partials/design/design';
