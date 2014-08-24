@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Fira Sans";
+  src: url('../fonts/fira_sans/firasans-book.eot?1408878462');
+  src: url('../fonts/fira_sans/firasans-book.eot?&1408878462#iefix') format('embedded-opentype'), url('../fonts/fira_sans/firasans-book.woff?1408878462') format('woff'), url('../fonts/fira_sans/firasans-book.ttf?1408878462') format('truetype');
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url('../fonts/fira_sans/firasans-bold.eot?1408878462');
+  src: url('../fonts/fira_sans/firasans-bold.eot?&1408878462#iefix') format('embedded-opentype'), url('../fonts/fira_sans/firasans-bold.woff?1408878462') format('woff'), url('../fonts/fira_sans/firasans-bold.ttf?1408878462') format('truetype');
+  font-weight: true;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,20 +81,6 @@ img, video {
   max-width: 960px;
 }
 
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/fira_sans/firasans-book.eot?312764400');
-  src: url('../fonts/fira_sans/firasans-book.eot?&312764400#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-book.woff?312764400') format("woff"), url('../fonts/fira_sans/firasans-book.ttf?312764400') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('../fonts/fira_sans/firasans-bold.eot?312764400');
-  src: url('../fonts/fira_sans/firasans-bold.eot?&312764400#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-bold.woff?312764400') format("woff"), url('../fonts/fira_sans/firasans-bold.ttf?312764400') format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
 body {
   font-family: "Fira Sans", "Droid Arabic Naskh", "Mplus Fulah", sans-serif;
 }

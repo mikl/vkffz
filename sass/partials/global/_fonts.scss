@@ -1,24 +1,16 @@
 // Font face configuration.
 
-// font-face helper seems to be broken in Compass 1.0.0-alpha.19.
-// So that's why we are doing it the ugly way here.
+// Force re-import of the compass font-face mixin, since otherwise the
+// one from toolkit would be used.
+// See also https://github.com/Team-Sass/toolkit/issues/76
+@import "compass/css3/font-face";
 
-@font-face {
-    font-family: 'Fira Sans';
-    src: font-url('fira_sans/firasans-book.eot');
-    src: font-url('fira_sans/firasans-book.eot?#iefix') format('embedded-opentype'),
-         font-url('fira_sans/firasans-book.woff') format('woff'),
-         font-url('fira_sans/firasans-book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@include font-face("Fira Sans", font-files(
+  "fira_sans/firasans-book.woff",
+  "fira_sans/firasans-book.ttf"
+), "fira_sans/firasans-book.eot");
 
-@font-face {
-    font-family: 'Fira Sans';
-    src: font-url('fira_sans/firasans-bold.eot');
-    src: font-url('fira_sans/firasans-bold.eot?#iefix') format('embedded-opentype'),
-         font-url('fira_sans/firasans-bold.woff') format('woff'),
-         font-url('fira_sans/firasans-bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
+@include font-face("Fira Sans", font-files(
+  "fira_sans/firasans-bold.woff",
+  "fira_sans/firasans-bold.ttf"
+), "fira_sans/firasans-bold.eot", true);
