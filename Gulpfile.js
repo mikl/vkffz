@@ -46,11 +46,7 @@ gulp.task('browserSync', function () {
     paths.img + '/**/*',
     paths.fonts + '/**/*',
     paths.html + '/**/*.html',
-  ], {
-    server: {
-      baseDir: paths.html
-    }
-  });
+  ]);
 });
 
 //////////////////////////////
