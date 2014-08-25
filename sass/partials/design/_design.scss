@@ -6,3 +6,13 @@
 //
 // All styling, non box model properties go here
 ////////////////////////
+
+body {
+  font-family: $fira-stack;
+  font-size: 14px;
+}
+
+#site-name a {
+  color: black;
+  text-decoration: none;
+}

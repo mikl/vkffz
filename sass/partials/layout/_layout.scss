@@ -6,3 +6,13 @@
 //
 // All box model properties go here
 ////////////////////////
+
+.site-template-header {
+  >.section {
+    @extend %layout-container;
+  }
+}
+
+.site-template-main {
+  @extend %layout-container;
+}

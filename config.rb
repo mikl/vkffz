@@ -5,6 +5,7 @@ require 'singularitygs'
 require 'toolkit'
 require 'modular-scale'
 require 'color-schemer'
+require 'normalize-scss'
 
 # Set this to the root of your project when deployed:
 http_path = "./"
