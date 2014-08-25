@@ -1,16 +1,16 @@
 // Font face configuration.
 
-// Force re-import of the compass font-face mixin, since otherwise the
-// one from toolkit would be used.
+// Use the font-face mixin from Toolkit.
 // See also https://github.com/Team-Sass/toolkit/issues/76
-@import "compass/css3/font-face";
 
-@include font-face("Fira Sans", font-files(
-  "fira_sans/firasans-book.woff",
-  "fira_sans/firasans-book.ttf"
-), "fira_sans/firasans-book.eot");
+@include font-face("Fira Sans", (
+  'eot': 'fira_sans/firasans-book.eot',
+  'woff': 'fira_sans/firasans-book.woff',
+  'ttf': 'fira_sans/firasans-book.ttf'
+));
 
-@include font-face("Fira Sans", font-files(
-  "fira_sans/firasans-bold.woff",
-  "fira_sans/firasans-bold.ttf"
-), "fira_sans/firasans-bold.eot", true);
+@include font-face("Fira Sans", (
+  'eot': 'fira_sans/firasans-bold.eot',
+  'woff': 'fira_sans/firasans-bold.woff',
+  'ttf': 'fira_sans/firasans-bold.ttf'
+), bold);
