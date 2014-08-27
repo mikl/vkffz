@@ -571,11 +571,18 @@ th {
 }
 
 body {
+  background-color: #edf4f9;
+  color: #003156;
   font-family: "Fira Sans", "Droid Arabic Naskh", "Mplus Fulah", sans-serif;
   font-size: 14px;
 }
 
+.site-template-header {
+  color: #edf4f9;
+  background-color: #00589a;
+}
+
 #site-name a {
-  color: black;
+  color: #edf4f9;
   text-decoration: none;
 }

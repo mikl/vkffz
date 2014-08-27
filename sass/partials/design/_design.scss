@@ -8,11 +8,18 @@
 ////////////////////////
 
 body {
+  background-color: $white;
+  color: $black;
   font-family: $fira-stack;
   font-size: 14px;
 }
 
+.site-template-header {
+  color: $white;
+  background-color: shade($zug-blue, 10%);
+}
+
 #site-name a {
-  color: black;
+  color: $white;
   text-decoration: none;
 }
