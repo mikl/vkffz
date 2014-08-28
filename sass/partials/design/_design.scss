@@ -7,11 +7,18 @@
 // All styling, non box model properties go here
 ////////////////////////
 
+@import "compass/typography/links/link-colors";
+
 body {
   background-color: $white;
   color: $black;
   font-family: $fira-stack;
   font-size: 14px;
+}
+
+a {
+  @include link-colors($zug-blue, shade($zug-blue, 33%));
+  text-decoration: none;
 }
 
 .site-template-header {

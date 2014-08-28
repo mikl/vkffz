@@ -577,6 +577,14 @@ body {
   font-size: 14px;
 }
 
+a {
+  color: #0062ac;
+  text-decoration: none;
+}
+a:hover {
+  color: #004173;
+}
+
 .site-template-header {
   color: #edf4f9;
   background-color: #00589a;
