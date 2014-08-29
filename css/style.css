@@ -570,6 +570,25 @@ th {
   padding: 0;
 }
 
+@media (min-width: 900px) {
+  .fuur-layout-sidebar-right > .layout-main {
+    width: 74.46809%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 900px) {
+  .fuur-layout-sidebar-right > .layout-sidebar {
+    width: 23.40426%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
 body {
   background-color: #edf4f9;
   color: #003156;

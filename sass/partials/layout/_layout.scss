@@ -16,3 +16,17 @@
 .site-template-main {
   @extend %layout-container;
 }
+
+.fuur-layout-sidebar-right {
+  >.layout-main {
+    @include breakpoint($bkpt-3) {
+      @include grid-span(9, 1);
+    }
+  }
+
+  >.layout-sidebar {
+    @include breakpoint($bkpt-3) {
+      @include grid-span(3, 10);
+    }
+  }
+}
