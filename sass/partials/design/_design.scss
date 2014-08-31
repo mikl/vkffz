@@ -22,11 +22,44 @@ a {
 }
 
 .site-template-header {
-  color: $white;
   background-color: shade($zug-blue, 10%);
-}
-
-#site-name a {
   color: $white;
-  text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: center;
+
+  @include breakpoint($bkpt-2) {
+    text-align: left;
+  }
+
+  a {
+    @include link-colors($white, tint($zug-blue, 77%));
+  }
+
+  #logo {
+    @include breakpoint($bkpt-2) {
+      @include grid-span(2, 1);
+    }
+
+    @include breakpoint($bkpt-3) {
+      @include grid-span(2, 1);
+    }
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  #site-name {
+    margin: 0;
+
+    @include breakpoint($bkpt-2) {
+      @include grid-span(6, 3);
+
+      margin-top: 4rem;
+    }
+
+    @include breakpoint($bkpt-3) {
+      @include grid-span(8, 3);
+    }
+  }
 }

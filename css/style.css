@@ -615,11 +615,62 @@ a:hover {
 }
 
 .site-template-header {
-  color: #edf4f9;
   background-color: #00589a;
-}
-
-#site-name a {
   color: #edf4f9;
-  text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .site-template-header {
+    text-align: left;
+  }
+}
+.site-template-header a {
+  color: #edf4f9;
+}
+.site-template-header a:hover {
+  color: #c4daeb;
+}
+@media (min-width: 700px) {
+  .site-template-header #logo {
+    width: 20%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  .site-template-header #logo {
+    width: 14.89362%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+.site-template-header #logo img {
+  max-width: 100px;
+}
+.site-template-header #site-name {
+  margin: 0;
+}
+@media (min-width: 700px) {
+  .site-template-header #site-name {
+    width: 65.71429%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 22.85714%;
+    clear: none;
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 960px) {
+  .site-template-header #site-name {
+    width: 65.95745%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 17.02128%;
+    clear: none;
+  }
 }
