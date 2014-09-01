@@ -4,6 +4,14 @@ core = 7.x
 base theme = aurora
 
 ; ========================================
+; CTools plugins.
+; ========================================
+
+api[panels][styles][version] = 3
+plugins[panels][layouts] = plugins/layouts
+
+
+; ========================================
 ; Regions
 ; ========================================
 

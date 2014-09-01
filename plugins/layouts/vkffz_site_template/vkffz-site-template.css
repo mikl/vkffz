@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Layout with sidebar on the right.
+ */
+
+.site-template-main-wrap {
+  clear: both;
+  margin-bottom: 1em;
+}
+
+.site-template-main-wrap >.site-template-main {
+  min-height: 1px;
+  width: 66.66%;
+  float: left;
+}
+
+.site-template-main-wrap >.site-template-sidebar {
+  min-height: 1px;
+  width: 33.33%;
+  float: left;
+}
+
