@@ -9,14 +9,19 @@
 }
 
 .site-template-main-wrap >.site-template-main {
+  float: left;
   min-height: 1px;
   width: 66.66%;
-  float: left;
 }
 
 .site-template-main-wrap >.site-template-sidebar {
+  float: left;
   min-height: 1px;
   width: 33.33%;
-  float: left;
+}
+
+.site-template-closure,
+.site-template-footer {
+  clear: both;
 }
 
