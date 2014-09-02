@@ -13,18 +13,16 @@
   }
 }
 
-.site-template-main {
+.site-template-main-wrap {
   @extend %layout-container;
-}
 
-.fuur-layout-sidebar-right {
-  >.layout-main {
+  >.site-template-main {
     @include breakpoint($bkpt-3) {
       @include grid-span(9, 1);
     }
   }
 
-  >.layout-sidebar {
+  >.site-template-sidebar {
     @include breakpoint($bkpt-3) {
       @include grid-span(3, 10);
     }
