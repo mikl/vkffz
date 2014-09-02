@@ -50,12 +50,14 @@ a {
   }
 
   #site-name {
+    font-size: 2rem;
     margin: 0;
 
     @include breakpoint($bkpt-2) {
       @include grid-span(6, 3);
 
-      margin-top: 4rem;
+      font-size: 3rem;
+      margin-top: 3rem;
     }
 
     @include breakpoint($bkpt-3) {
