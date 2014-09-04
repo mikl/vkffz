@@ -617,7 +617,7 @@ a:hover {
 .site-template-header {
   background-color: #00589a;
   color: #edf4f9;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0;
   text-align: center;
 }
 @media (min-width: 700px) {
@@ -675,4 +675,43 @@ a:hover {
     margin-left: 17.02128%;
     clear: none;
   }
+}
+.site-template-header .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0;
+}
+.site-template-header .menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.site-template-header .menu li {
+  display: inline-block;
+}
+.site-template-header .menu a {
+  -moz-border-radius-topleft: 0.5rem;
+  -webkit-border-top-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  -moz-border-radius-topright: 0.5rem;
+  -webkit-border-top-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #004173;
+  color: #edf4f9;
+  display: inline-block;
+  padding: 0.5rem 0.7rem 0.2rem;
+}
+.site-template-header .menu a a {
+  color: #edf4f9;
+}
+.site-template-header .menu a:hover {
+  background-color: #2679b8;
+}
+.site-template-header .menu a.active {
+  background-color: #edf4f9;
+  color: #003156;
+  cursor: default;
+}
+.site-template-header .menu a.active a {
+  color: #003156;
 }
