@@ -1,5 +1,6 @@
 // Colors
 $zug-blue: #0062ac;
+$zug-hue: hue($zug-blue);
 
 $black: shade($zug-blue, 50%);
 $white: tint($zug-blue, 93%);

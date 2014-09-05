@@ -707,11 +707,47 @@ a:hover {
 .site-template-header .menu a:hover {
   background-color: #2679b8;
 }
-.site-template-header .menu a.active {
+.site-template-header .menu a.active-trail {
   background-color: #edf4f9;
   color: #003156;
   cursor: default;
 }
-.site-template-header .menu a.active a {
+.site-template-header .menu a.active-trail a {
   color: #003156;
+}
+
+ul.tabs {
+  list-style: none;
+  border-bottom: 1px solid #b9c0c6;
+  font-size: 12px;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+ul.tabs li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.tabs li {
+  display: inline-block;
+}
+ul.tabs a {
+  -moz-border-radius-topleft: 0.5rem;
+  -webkit-border-top-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  -moz-border-radius-topright: 0.5rem;
+  -webkit-border-top-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #d5d9dd;
+  border: 1px solid #b9c0c6;
+  display: inline-block;
+  margin-bottom: -1px;
+  padding: 0.2rem 0.5rem 0;
+}
+ul.tabs a:hover {
+  background-color: #e3e6e8;
+}
+ul.tabs a.active {
+  background-color: #edf4f9;
+  border-bottom-color: #edf4f9;
 }

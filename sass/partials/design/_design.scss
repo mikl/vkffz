@@ -92,7 +92,7 @@ a {
         background-color: tint($zug-blue, 15%);
       }
 
-      &.active {
+      &.active-trail {
         background-color: $white;
         color: $black;
         cursor: default;
@@ -101,6 +101,41 @@ a {
           color: $black;
         }
       }
+    }
+  }
+}
+
+ul.tabs {
+  @include no-bullets;
+
+  $tab-bg: hsl($zug-hue, 10%, 85%);
+  $tab-border: hsl($zug-hue, 10%, 75%);
+
+  border-bottom: 1px solid $tab-border;
+  font-size: 12px;
+  margin: 0.5rem 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @include border-top-radius(0.5rem);
+
+    background-color: $tab-bg;
+    border: 1px solid $tab-border;
+    display: inline-block;
+    margin-bottom: -1px;
+    padding: 0.2rem 0.5rem 0;
+
+    &:hover {
+      background-color: hsl($zug-hue, 10%, 90%);
+    }
+
+    &.active {
+      background-color: $white;
+      border-bottom-color: $white;
     }
   }
 }
