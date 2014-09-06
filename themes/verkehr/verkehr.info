@@ -1,5 +1,5 @@
-name = VKFFZ
-description = VKFFZ theme based on the Aurora base theme.
+name = Verkehr
+description = Verkehr theme based on the Aurora base theme.
 core = 7.x
 base theme = aurora
 
@@ -59,7 +59,7 @@ settings[magic_embedded_mqs] = '0'
 settings[magic_css_excludes] = ':core
 :contrib
 *fuur_base/plugins/layouts*
-*vkffz/plugins/layouts*
+*verkehr/plugins/layouts*
 ~admin_menu/*
 ~modules/system/system.base.css'
 settings[magic_footer_js] = '0'
@@ -72,6 +72,6 @@ settings[magic_rebuild_registry] = '0'
 settings[magic_viewport_indicator] = '0'
 settings[magic_modernizr_debug] = ''
 settings[magic_performance__active_tab] = 'edit-css'
-settings[magic_css_excludes_regex][exclude] = '/^(misc\/(.*)|modules\/(.*)|themes\/(.*)|sites\/all\/modules\/(.*)|(.*)fuur_base\/plugins\/layouts(.*)|(.*)vkffz\/plugins\/layouts(.*))$/'
+settings[magic_css_excludes_regex][exclude] = '/^(misc\/(.*)|modules\/(.*)|themes\/(.*)|sites\/all\/modules\/(.*)|(.*)fuur_base\/plugins\/layouts(.*)|(.*)verkehr\/plugins\/layouts(.*))$/'
 settings[magic_css_excludes_regex][include] = '/^(sites\/all\/modules\/admin_menu\/(.*)|modules\/system\/system\.base\.css)$/'
 settings[magic_js_excludes_regex] = ''
