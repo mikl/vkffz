@@ -20,6 +20,7 @@ features[variable][] = date_format_html5_tools_iso8601
 features[variable][] = date_format_long
 features[variable][] = date_format_medium
 features[variable][] = date_format_short
+features[variable][] = install_profile
 features[variable][] = node_admin_theme
 features[variable][] = panels_everywhere_site_template_enabled
 features[variable][] = site_default_country
