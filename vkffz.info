@@ -1,0 +1,9 @@
+name = VKFFZ
+description = Drupal install profile for vkffz.ch
+core = 7.x
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = panels
+dependencies[] = views

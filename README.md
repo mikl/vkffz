@@ -1,5 +1,5 @@
 VKFFZ
 =====
 
-Drupal theme for the website for Verkehrskorps der Freiwilligen
+Drupal install profile for the website for Verkehrskorps der Freiwilligen
 Feuerwehr der Stadt Zug.

@@ -1,0 +1,116 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the vkffz installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function vkffz_install() {
+  // Enable some standard blocks.
+  $default_theme = variable_get('theme_default', 'bartik');
+  $values = array(
+    array(
+      'module' => 'system',
+      'delta' => 'main',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  foreach ($values as $record) {
+    $query->values($record);
+  }
+  $query->execute();
+
+  // Don't allow site visitors to create new accounts.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
+  // Enable default permissions for system roles.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+}
+
+/**
+ * Implements hook_install_tasks().
+ */
+function vkffz_install_tasks() {
+  $tasks = array();
+
+  $tasks['vkffz_install_additional_modules'] = array(
+    'display_name' => st('Install additional modules'),
+    'type' => 'batch',
+    'display' => TRUE,
+  );
+
+  return $tasks;
+}
+
+/**
+ * Task callback: uses Batch API to install modules.
+ */
+function vkffz_install_additional_modules() {
+  $modules = array(
+    'admin_menu',
+    'borealis',
+    'diff',
+    'entity',
+    'fences',
+    'fuur_base',
+    'fuur_incident',
+    'fuur_front_page',
+    'html5_tools',
+    'magic',
+    'module_filter',
+  );
+
+  // Resolve the dependencies now, so that module_enable() doesn't need
+  // to do it later for each individual module (which kills performance).
+  $files = system_rebuild_module_data();
+  $modules_sorted = array();
+  foreach ($modules as $module) {
+    if ($files[$module]->requires) {
+      // Create a list of dependencies that haven't been installed yet.
+      $dependencies = array_keys($files[$module]->requires);
+      $dependencies = array_filter($dependencies, '_vkffz_filter_dependencies');
+      // Add them to the module list.
+      $modules = array_merge($modules, $dependencies);
+    }
+  }
+  $modules = array_unique($modules);
+  foreach ($modules as $module) {
+    $modules_sorted[$module] = $files[$module]->sort;
+  }
+  arsort($modules_sorted);
+
+  $operations = array();
+  foreach ($modules_sorted as $module => $weight) {
+    $operations[] = array('_vkffz_enable_module', array($module, $files[$module]->info['name']));
+  }
+
+  $operations[] = array('_vkffz_flush_caches', array(t('Flushed caches.')));
+
+  $batch = array(
+    'title' => t('Installing additional modules'),
+    'operations' => $operations,
+    'file' => drupal_get_path('profile', 'vkffz') . '/vkffz.install_callbacks.inc',
+  );
+
+  return $batch;
+}
+
+/**
+ * array_filter() callback used to filter out already installed dependencies.
+ */
+function _vkffz_filter_dependencies($dependency) {
+  return !module_exists($dependency);
+}
