@@ -139,3 +139,11 @@ ul.tabs {
     }
   }
 }
+
+.fuur-sponsor-list {
+  @include no-bullets;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
