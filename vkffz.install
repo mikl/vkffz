@@ -68,9 +68,11 @@ function vkffz_install_additional_modules() {
     'fuur_base',
     'fuur_incident',
     'fuur_front_page',
+    'fuur_wysiwyg',
     'html5_tools',
     'magic',
     'module_filter',
+    'vkffz_config',
   );
 
   // Resolve the dependencies now, so that module_enable() doesn't need
