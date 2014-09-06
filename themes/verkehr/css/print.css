@@ -1,0 +1,24 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/fira_sans/firasans-book.eot?1408878462') format("embedded-opentype");
+  src: url('../fonts/fira_sans/firasans-book.eot?1408878462#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-book.woff?1408878462') format("woff"), url('../fonts/fira_sans/firasans-book.ttf?1408878462') format("truetype");
+}
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/fira_sans/firasans-bold.eot?1408878462') format("embedded-opentype");
+  src: url('../fonts/fira_sans/firasans-bold.eot?1408878462#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-bold.woff?1408878462') format("woff"), url('../fonts/fira_sans/firasans-bold.ttf?1408878462') format("truetype");
+}
