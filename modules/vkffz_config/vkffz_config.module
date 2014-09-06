@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the VKFFZ config feature.
+ */
+
+include_once 'vkffz_config.features.inc';
