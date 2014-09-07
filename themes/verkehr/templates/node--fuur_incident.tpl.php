@@ -3,11 +3,8 @@
  * @file
  * Theme implementation for incident nodes.
  */
-dpm($variables);
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-røghul
 
   <header>
     <?php print render($title_prefix); ?>
@@ -19,6 +16,12 @@ røghul
     <?php print render($content['fuur_incident_location']); ?>,
     <?php print render($content['fuur_incident_datetime']); ?>
   </header>
+
+  <div class="images">
+    <span class="type-label"><?php echo t('Operation'); ?></span>
+
+    <?php print render($content['fuur_base_images']); ?>
+  </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
