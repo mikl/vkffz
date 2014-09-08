@@ -22,6 +22,8 @@ projects[elements][version] = "1.4"
 
 projects[entity][version] = "1.5"
 
+projects[entitycache][version] = "1.2"
+
 projects[features][version] = "2.2"
 
 projects[fences][version] = "1.0"
@@ -53,6 +55,8 @@ projects[pathauto][version] = "1.2"
 
 projects[redirect][version] = "1.0-rc1"
 
+projects[redis][version] = "2.11"
+
 projects[rules][version] = "2.7"
 
 projects[strongarm][version] = "2.0"
@@ -76,6 +80,10 @@ projects[aurora][version] = "3.4"
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.4/ckeditor_4.4.4_full.zip"
+
+libraries[predis][download][type] = git
+libraries[predis][download][url] = https://github.com/nrk/predis.git
+libraries[predis][download][revision] = v0.8.7
 
 libraries[wvega-timepicker][type] = "libraries"
 libraries[wvega-timepicker][download][type] = "file"
