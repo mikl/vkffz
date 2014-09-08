@@ -30,6 +30,11 @@ projects[fences][version] = "1.0"
 
 projects[field_formatter_settings][version] = "1.1"
 
+projects[fuur][type] = module
+projects[fuur][download][type] = git
+projects[fuur][download][url] = https://github.com/mikl/fuur.git
+projects[fuur][download][revision] = 9856e6d3d18bbcfd8c8474462d85153b9c159d4b
+
 projects[html5_tools][version] = "1.2"
 
 projects[panels][version] = "3.4"
