@@ -1,0 +1,43 @@
+////////////////////////
+// Design Partials
+//
+// Design implementation for nodes.
+////////////////////////
+
+.node {
+  .links {
+    @include no-bullets;
+    @include inline-block-list;
+  }
+}
+
+.node-fuur-incident {
+  .field-name-fuur-incident-location,
+  .field-name-fuur-incident-datetime {
+    display: inline;
+  }
+
+  .fuur-image-box {
+    min-height: 1.5rem;
+    position: relative;
+
+    .type-label {
+      background-color: rgba($black, 0.7);
+      color: rgba($white, 0.7);
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.view-fuur-front-page-teasers {
+  .node {
+    border-bottom: 1px solid $border-grey;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}

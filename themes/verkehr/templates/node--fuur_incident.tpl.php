@@ -13,11 +13,11 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-    <?php print render($content['fuur_incident_location']); ?>,
+    <?php print render($content['fuur_incident_location']); ?> –
     <?php print render($content['fuur_incident_datetime']); ?>
   </header>
 
-  <div class="images">
+  <div class="fuur-image-box">
     <span class="type-label"><?php echo t('Operation'); ?></span>
 
     <?php print render($content['fuur_base_images']); ?>
