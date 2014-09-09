@@ -41,6 +41,8 @@ projects[panels][version] = "3.4"
 
 projects[jquery_update][version] = "2.4"
 
+projects[l10n_update][version] = "2.0-rc1"
+
 projects[link][version] = "1.2"
 
 projects[magic][version] = "1.5"
