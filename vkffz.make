@@ -30,14 +30,21 @@ projects[fences][version] = "1.0"
 
 projects[field_formatter_settings][version] = "1.1"
 
+projects[file_entity][type] = module
+projects[file_entity][download][type] = git
+projects[file_entity][download][url] = http://git.drupal.org/project/file_entity.git
+projects[file_entity][download][revision] =	1e037ada7f783058aa460cf90421b809ba04d0a7
+
 projects[fuur][type] = module
 projects[fuur][download][type] = git
 projects[fuur][download][url] = https://github.com/mikl/fuur.git
-projects[fuur][download][revision] = 9856e6d3d18bbcfd8c8474462d85153b9c159d4b
+projects[fuur][download][revision] = 4b477108d55171d3570dc22aa228ec6f06a38334
 
 projects[html5_tools][version] = "1.2"
 
 projects[panels][version] = "3.4"
+
+projects[image_resize_filter][version] = "1.14"
 
 projects[jquery_update][version] = "2.4"
 
@@ -46,6 +53,11 @@ projects[l10n_update][version] = "2.0-rc1"
 projects[link][version] = "1.2"
 
 projects[magic][version] = "1.5"
+
+projects[media][type] = module
+projects[media][download][type] = git
+projects[media][download][url] = http://git.drupal.org/project/media.git
+projects[media][download][revision] =	5d7ed633439e2ddd633a5e35fa5442743eeb0df0
 
 projects[menu_block][version] = "2.4"
 
