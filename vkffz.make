@@ -30,10 +30,7 @@ projects[fences][version] = "1.0"
 
 projects[field_formatter_settings][version] = "1.1"
 
-projects[file_entity][type] = module
-projects[file_entity][download][type] = git
-projects[file_entity][download][url] = http://git.drupal.org/project/file_entity.git
-projects[file_entity][download][revision] =	1e037ada7f783058aa460cf90421b809ba04d0a7
+projects[file_entity][version] = "2.0-beta1"
 
 projects[fuur][type] = module
 projects[fuur][download][type] = git
@@ -48,7 +45,7 @@ projects[image_resize_filter][version] = "1.14"
 
 projects[jquery_update][version] = "2.4"
 
-projects[l10n_update][version] = "2.0-rc1"
+projects[l10n_update][version] = "2.0-rc2"
 
 projects[link][version] = "1.2"
 
