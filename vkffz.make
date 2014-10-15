@@ -35,7 +35,7 @@ projects[file_entity][version] = "2.0-beta1"
 projects[fuur][type] = module
 projects[fuur][download][type] = git
 projects[fuur][download][url] = https://github.com/mikl/fuur.git
-projects[fuur][download][revision] = 40848a91a3a8cbfa334f6a38a9de2a404a198666
+projects[fuur][download][revision] = 41765dfac38680dbe06fb60c2907b562650fe93e
 
 projects[html5_tools][version] = "1.2"
 
