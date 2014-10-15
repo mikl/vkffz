@@ -54,10 +54,7 @@ projects[link][version] = "1.2"
 
 projects[magic][version] = "1.5"
 
-projects[media][type] = module
-projects[media][download][type] = git
-projects[media][download][url] = http://git.drupal.org/project/media.git
-projects[media][download][revision] =	5d7ed633439e2ddd633a5e35fa5442743eeb0df0
+projects[media][version] = "2.0-alpha4"
 
 projects[menu_block][version] = "2.4"
 
