@@ -37,6 +37,8 @@ projects[fuur][download][type] = git
 projects[fuur][download][url] = https://github.com/mikl/fuur.git
 projects[fuur][download][revision] = 41765dfac38680dbe06fb60c2907b562650fe93e
 
+projects[genpass][version] = "1.0"
+
 projects[html5_tools][version] = "1.2"
 
 projects[panels][version] = "3.4"
