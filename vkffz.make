@@ -28,6 +28,8 @@ projects[features][version] = "2.2"
 
 projects[fences][version] = "1.0"
 
+projects[field_collection][version] = "1.0-beta7"
+
 projects[field_formatter_settings][version] = "1.1"
 
 projects[file_entity][version] = "2.0-beta1"
@@ -35,7 +37,7 @@ projects[file_entity][version] = "2.0-beta1"
 projects[fuur][type] = module
 projects[fuur][download][type] = git
 projects[fuur][download][url] = https://github.com/mikl/fuur.git
-projects[fuur][download][revision] = 41765dfac38680dbe06fb60c2907b562650fe93e
+projects[fuur][download][revision] = 10d5a752
 
 projects[genpass][version] = "1.0"
 
