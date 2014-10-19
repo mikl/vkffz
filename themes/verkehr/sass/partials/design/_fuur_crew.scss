@@ -1,0 +1,24 @@
+////////////////////////
+// Design Partials
+//
+// Design implementation fuur crew list.
+////////////////////////
+
+.fuur-crew-public-profile-list {
+  @include clearfix();
+  @include no-bullets();
+  padding: 0;
+
+  li {
+    // To account for long titles, etc.
+    min-height: 305px;
+
+    @include breakpoint($bkpt-2) {
+      @include float-span(2);
+    }
+
+    @include breakpoint($bkpt-3) {
+      @include float-span(3);
+    }
+  }
+}

@@ -599,6 +599,39 @@ th {
   }
 }
 
+.fuur-crew-public-profile-list {
+  overflow: hidden;
+  *zoom: 1;
+  list-style: none;
+  padding: 0;
+}
+.fuur-crew-public-profile-list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.fuur-crew-public-profile-list li {
+  min-height: 305px;
+}
+@media (min-width: 700px) {
+  .fuur-crew-public-profile-list li {
+    width: 20%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.85714%;
+  }
+}
+@media (min-width: 960px) {
+  .fuur-crew-public-profile-list li {
+    width: 23.40426%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+}
+
 .node .links {
   list-style: none;
   margin: 0;
