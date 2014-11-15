@@ -28,7 +28,7 @@ projects[features][version] = "2.2"
 
 projects[fences][version] = "1.0"
 
-projects[field_collection][version] = "1.0-beta7"
+projects[field_collection][version] = "1.0-beta8"
 
 projects[field_formatter_settings][version] = "1.1"
 
@@ -49,11 +49,11 @@ projects[image_resize_filter][version] = "1.14"
 
 projects[jquery_update][version] = "2.4"
 
-projects[l10n_update][version] = "2.0-rc2"
+projects[l10n_update][version] = "2.0"
 
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
 
-projects[magic][version] = "1.5"
+projects[magic][version] = "2.0"
 
 projects[media][version] = "2.0-alpha4"
 
@@ -78,6 +78,8 @@ projects[token][version] = "1.5"
 projects[transliteration][version] = "3.2"
 
 projects[views][version] = "3.8"
+
+projects[webform][version] = "4.1"
 
 projects[wysiwyg][type] = module
 projects[wysiwyg][download][type] = git
