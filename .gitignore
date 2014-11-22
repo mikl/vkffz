@@ -1,5 +1,8 @@
+*.py[co]
 .sass-cache
-bower_components/
-modules/fuur
-node_modules/
 .vendor
+/libraries
+/modules/contrib
+/themes/contrib
+bower_components/
+node_modules/
