@@ -44,6 +44,7 @@ projects:
   media: "2.0-alpha4"
   menu_block: "2.4"
   module_filter: "1.8"
+  panelizer: "3.1"
   panels: "3.4"
   panels_everywhere: "1.0-rc1"
   pathauto: "1.2"
