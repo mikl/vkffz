@@ -6,6 +6,7 @@ $zug-hue: hue($zug-blue);
 $black: shade($zug-blue, 50%);
 $white: tint($zug-blue, 93%);
 $border-grey: hsl($zug-hue, 10%, 75%);
+$medium-grey: hsl($zug-hue, 10%, 60%);
 
 // Fonts
 $fira-stack: "Fira Sans", "Droid Arabic Naskh", "Mplus Fulah", sans-serif;

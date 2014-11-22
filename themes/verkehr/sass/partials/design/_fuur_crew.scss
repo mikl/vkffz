@@ -4,6 +4,22 @@
 // Design implementation fuur crew list.
 ////////////////////////
 
+.fuur-crew-profiles {
+  .first-name,
+  .last-name {
+    font-weight: bold;
+  }
+
+  .rank,
+  .title {
+    font-size: 0.75rem;
+  }
+
+  .title {
+    color: $medium-grey;
+  }
+}
+
 .fuur-crew-public-profile-list {
   @include clearfix();
   @include no-bullets();

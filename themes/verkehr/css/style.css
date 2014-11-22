@@ -599,6 +599,18 @@ th {
   }
 }
 
+.fuur-crew-profiles .first-name,
+.fuur-crew-profiles .last-name {
+  font-weight: bold;
+}
+.fuur-crew-profiles .rank,
+.fuur-crew-profiles .title {
+  font-size: 0.75rem;
+}
+.fuur-crew-profiles .title {
+  color: #8f9aa3;
+}
+
 .fuur-crew-public-profile-list {
   overflow: hidden;
   *zoom: 1;
