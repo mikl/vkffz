@@ -121,6 +121,74 @@ function vkffz_config_default_page_manager_handlers() {
     $display->content['new-69f5b37b-6fa3-4d33-a953-4e753579ed44'] = $pane;
     $display->panels['content'][2] = 'new-69f5b37b-6fa3-4d33-a953-4e753579ed44';
     $pane = new stdClass();
+    $pane->pid = 'new-815e66ec-5daa-46a0-92fa-fa96962c7902';
+    $pane->panel = 'footer';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Contact info',
+      'title' => '',
+      'body' => '<p class="h-card">
+  <a class="p-name u-url" href="http://www.vkffz.ch">Verkehrskorps der FFZ </a><br />
+
+  <span class="p-street-address">Ahornstrasse 10</span><br />
+  <span class="p-postal-code">CH-6301</span> <span class="p-locality">Zug</span><br />
+  <span class="p-country-name">Schweiz</span><br />
+  <br />
+  <a class="u-email" href="mailto:info@vkffz.ch">info@vkffz.ch</a>
+</p>',
+      'format' => 'fuur_wysiwyg',
+      'substitute' => 1,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'contact-info',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '815e66ec-5daa-46a0-92fa-fa96962c7902';
+    $display->content['new-815e66ec-5daa-46a0-92fa-fa96962c7902'] = $pane;
+    $display->panels['footer'][0] = 'new-815e66ec-5daa-46a0-92fa-fa96962c7902';
+    $pane = new stdClass();
+    $pane->pid = 'new-485da3e1-5a57-4cc2-a793-c487b7fd204c';
+    $pane->panel = 'footer';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'menu-secondary-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'menu_name' => 'menu-secondary-menu',
+      'parent_mlid' => 0,
+      'parent' => 'menu-secondary-menu:0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '1',
+      'follow' => 0,
+      'depth' => '1',
+      'expanded' => 0,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '485da3e1-5a57-4cc2-a793-c487b7fd204c';
+    $display->content['new-485da3e1-5a57-4cc2-a793-c487b7fd204c'] = $pane;
+    $display->panels['footer'][1] = 'new-485da3e1-5a57-4cc2-a793-c487b7fd204c';
+    $pane = new stdClass();
     $pane->pid = 'new-b9acc7bf-a23f-4f22-899c-39c655e191eb';
     $pane->panel = 'footer';
     $pane->type = 'block';
@@ -138,11 +206,11 @@ function vkffz_config_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = 'b9acc7bf-a23f-4f22-899c-39c655e191eb';
     $display->content['new-b9acc7bf-a23f-4f22-899c-39c655e191eb'] = $pane;
-    $display->panels['footer'][0] = 'new-b9acc7bf-a23f-4f22-899c-39c655e191eb';
+    $display->panels['footer'][2] = 'new-b9acc7bf-a23f-4f22-899c-39c655e191eb';
     $pane = new stdClass();
     $pane->pid = 'new-37fec951-2f1b-4b0b-a1ad-b2e950089ea4';
     $pane->panel = 'header';
