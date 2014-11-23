@@ -189,29 +189,6 @@ function vkffz_config_default_page_manager_handlers() {
     $display->content['new-485da3e1-5a57-4cc2-a793-c487b7fd204c'] = $pane;
     $display->panels['footer'][1] = 'new-485da3e1-5a57-4cc2-a793-c487b7fd204c';
     $pane = new stdClass();
-    $pane->pid = 'new-b9acc7bf-a23f-4f22-899c-39c655e191eb';
-    $pane->panel = 'footer';
-    $pane->type = 'block';
-    $pane->subtype = 'system-powered-by';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'style' => 'default',
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = 'b9acc7bf-a23f-4f22-899c-39c655e191eb';
-    $display->content['new-b9acc7bf-a23f-4f22-899c-39c655e191eb'] = $pane;
-    $display->panels['footer'][2] = 'new-b9acc7bf-a23f-4f22-899c-39c655e191eb';
-    $pane = new stdClass();
     $pane->pid = 'new-37fec951-2f1b-4b0b-a1ad-b2e950089ea4';
     $pane->panel = 'header';
     $pane->type = 'pane_header';
