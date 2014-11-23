@@ -626,6 +626,13 @@ th {
   }
 }
 
+form .form-item {
+  padding: 0.5rem 0;
+}
+form .form-item label {
+  display: block;
+}
+
 .fuur-crew-profiles .first-name,
 .fuur-crew-profiles .last-name {
   font-weight: bold;
