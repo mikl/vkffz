@@ -643,6 +643,12 @@ th {
     margin-right: 2.12766%;
   }
 }
+.fuur-crew-public-profile-list .portrait {
+  background-image: url('../images/portrait-placeholder.png?1416700965');
+  height: 221px;
+  width: 166px;
+  margin-bottom: 0.5rem;
+}
 
 .node .links {
   list-style: none;

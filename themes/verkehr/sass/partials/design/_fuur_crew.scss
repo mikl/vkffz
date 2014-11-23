@@ -37,4 +37,12 @@
       @include float-span(3);
     }
   }
+
+  .portrait {
+    background-image: image-url('portrait-placeholder.png');
+    height: 221px;
+    width: 166px;
+
+    margin-bottom: 0.5rem;
+  }
 }
