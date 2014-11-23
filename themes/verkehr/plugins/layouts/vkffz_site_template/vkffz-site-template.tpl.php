@@ -25,7 +25,9 @@
 
 <?php if ($content['footer']): ?>
   <footer class="site-template-footer" role="contentinfo">
-    <?php print render($content['footer']); ?>
+    <div class="section">
+      <?php print render($content['footer']); ?>
+    </div>
   </footer>
 <?php endif; ?>
 
