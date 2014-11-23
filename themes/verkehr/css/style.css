@@ -890,3 +890,16 @@ ul.tabs a.active {
   list-style-type: none;
   margin-left: 0;
 }
+
+.site-template-footer {
+  background-color: #00589a;
+  color: #d8e7f2;
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0;
+}
+.site-template-footer a {
+  color: #edf4f9;
+}
+.site-template-footer a:hover {
+  color: #c4daeb;
+}

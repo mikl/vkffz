@@ -149,3 +149,14 @@ ul.tabs {
   padding: 0;
   text-align: center;
 }
+
+.site-template-footer {
+  background-color: shade($zug-blue, 10%);
+  color: tint($zug-blue, 85%);
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0;
+
+  a {
+    @include link-colors($white, tint($zug-blue, 77%));
+  }
+}
