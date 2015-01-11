@@ -33,7 +33,7 @@ projects:
     download:
       type: "git"
       url: "https://github.com/mikl/fuur.git"
-      revision: "c0e6af4"
+      revision: "88c642f5a"
   genpass: "1.0"
   html5_tools: "1.2"
   image_resize_filter: "1.14"
@@ -43,6 +43,7 @@ projects:
   magic: "2.1"
   media: "2.0-alpha4"
   menu_block: "2.4"
+  migrate: "2.6"
   module_filter: "1.8"
   panelizer: "3.1"
   panels: "3.4"
