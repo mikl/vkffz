@@ -47,7 +47,7 @@ projects:
   module_filter: "1.8"
   panelizer: "3.1"
   panels: "3.4"
-  panels_everywhere: "1.0-rc1"
+  panels_everywhere: "1.0-rc2"
   pathauto: "1.2"
   redirect: "1.0-rc1"
   redis: "2.11"
