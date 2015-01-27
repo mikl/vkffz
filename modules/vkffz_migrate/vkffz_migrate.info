@@ -1,0 +1,14 @@
+name = VKFFZ migrate
+description = Data migration from old VKFFZ site.
+package = Development
+core = 7.x
+dependencies[] = taxonomy
+dependencies[] = image
+dependencies[] = comment
+dependencies[] = migrate
+dependencies[] = list
+dependencies[] = number
+
+files[] = vkffz_migrate.base_migration.inc
+files[] = vkffz_migrate.incident.inc
+files[] = vkffz_migrate.migrate.inc
