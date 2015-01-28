@@ -124,15 +124,16 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // Try and find the date from the intro text.
     $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
 
-    // Unpublish nodes without a valid timestamp.
-    if (!$incident_timestamp) {
+    // Convert the incident timestamp to Unix time.
+    if ($incident_timestamp instanceof DateTime) {
+      $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
+    }
+    // Unpublish nodes without a valid timestamp and report the error.
+    else {
       $current_row->published = 0;
 
       $this->queueMessage('Failed to find incident date from record.');
     }
-
-    // Convert the incident timestamp to Unix time.
-    $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
 
     // Merge the intro text and the full text into the new body.
     $current_row->body_text = $current_row->introtext . "\r\r" . $current_row->fulljoomlatext;
