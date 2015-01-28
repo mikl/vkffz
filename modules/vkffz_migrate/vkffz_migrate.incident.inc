@@ -130,15 +130,22 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
       $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
     }
 
-    // Convert the incident timestamp to Unix time.
+    // If we found a date, proceed.
     if ($incident_timestamp instanceof DateTime) {
+      // Try to extract the time from the intro text.
+      if (!self::vkffzExtractTimeFromIntroText($current_row->introtext, $incident_timestamp)) {
+        $this->queueMessage('Failed to find incident time for record.');
+        $current_row->published = 0;
+      }
+
+      // Convert the incident timestamp to Unix time.
       $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
     }
     // Unpublish nodes without a valid timestamp and report the error.
     else {
       $current_row->published = 0;
 
-      $this->queueMessage('Failed to find incident date from record.');
+      $this->queueMessage('Failed to find incident date for record.');
     }
 
     // Merge the intro text and the full text into the new body.
@@ -162,7 +169,6 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
 
       $timestamp = new DateTime();
       $timestamp->setDate('20' . $matches[3], $matches[2], $matches[1]);
-
 
       return $timestamp;
     }
@@ -192,6 +198,29 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     }
 
     return $timestamp;
+  }
+
+  /**
+   * Helper function to extract the time from the intro text.
+   *
+   * @param string $introText
+   *   Text to try and parse.
+   * @param DateTime $timestamp
+   *   DateTime object to apply the found time to.
+   *
+   * @return boolean
+   *   If time was found or not.
+   */
+  public static function vkffzExtractTimeFromIntroText($introText, DateTime $timestamp) {
+    $matches = array();
+
+    if (preg_match('/zeit\W{1,4}(\d{1,2})\D?(\d{2})/i', $introText, $matches)) {
+      $timestamp->setTime($matches[1], $matches[2]);
+
+      return TRUE;
+    }
+
+    return FALSE;
   }
 
   /**
