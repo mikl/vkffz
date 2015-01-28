@@ -158,7 +158,6 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     $matches = array();
 
     if (preg_match('/^(\d{1,2})\.(\d{1,2})\.(\d{2})\s*(.*)$/', trim($title), $matches)) {
-      echo('Found timestamp from title: ' . $title);
       $title = $matches[4];
 
       $timestamp = new DateTime();
