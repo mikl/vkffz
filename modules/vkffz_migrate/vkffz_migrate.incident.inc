@@ -118,11 +118,18 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
       $current_row->conv_changed = $current_row->conv_created;
     }
 
-    // Set the published status, currently always 1.
+    // Set the published status, defaults to 1.
     $current_row->published = 1;
 
     // Try and find the date from the intro text.
     $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
+
+    // Unpublish nodes without a valid timestamp.
+    if (!$incident_timestamp) {
+      $current_row->published = 0;
+
+      $this->queueMessage('Failed to find incident date from record.');
+    }
 
     // Convert the incident timestamp to Unix time.
     $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
