@@ -121,8 +121,13 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // Set the published status, defaults to 1.
     $current_row->published = 1;
 
-    // Try and find the date from the intro text.
-    $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
+    // Try to find the date from the title.
+    $incident_timestamp = self::vkffzExtractDateFromTitle($current_row->title);
+
+    // Try to find the date from the intro text.
+    if (!$incident_timestamp) {
+      $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
+    }
 
     // Convert the incident timestamp to Unix time.
     if ($incident_timestamp instanceof DateTime) {
@@ -139,6 +144,28 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     $current_row->body_text = $current_row->introtext . "\r\r" . $current_row->fulljoomlatext;
 
     return TRUE;
+  }
+
+  /**
+   * Try to parse (and remove) date from title.
+   *
+   * @param string $title
+   *
+   * @return DateTime|null
+   */
+  public static function vkffzExtractDateFromTitle(&$title) {
+    $matches = array();
+
+    if (preg_match('/^(\d{1,2})\.(\d{1,2})\.(\d{2})\s*(.*)$/', trim($title), $matches)) {
+      echo('Found timestamp from title: ' . $title);
+      $title = $matches[4];
+
+      $timestamp = new DateTime();
+      $timestamp->setDate('20' . $matches[3], $matches[2], $matches[1]);
+
+
+      return $timestamp;
+    }
   }
 
   /**
