@@ -95,6 +95,9 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // Map body text into the body field.
     $this->addFieldMapping('fuur_base_body', 'body_text');
 
+    // Map the incident timestamp to its field.
+    $this->addFieldMapping('fuur_incident_datetime', 'incident_timestamp');
+
     // Unmapped destination fields.
     $this->addUnmigratedDestinations(['revision_uid', 'promote', 'revision', 'log', 'tnid', 'is_new']);
   }
@@ -118,9 +121,84 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // Set the published status, currently always 1.
     $current_row->published = 1;
 
+    // Try and find the date from the intro text.
+    $incident_timestamp = self::vkffzExtractDate($current_row->introtext);
+
+    // Convert the incident timestamp to Unix time.
+    $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
+
     // Merge the intro text and the full text into the new body.
     $current_row->body_text = $current_row->introtext . "\r\r" . $current_row->fulljoomlatext;
 
     return TRUE;
+  }
+
+  /**
+   * Helper function to extract date from text string.
+   *
+   * @param string $input
+   *   String to try and find date in.
+   *
+   * @return DateTime|null
+   *   DateTime object if successful.
+   */
+  public static function vkffzExtractDate($input) {
+    $matches = array();
+    $timestamp = null;
+
+    // 28. Februar 2013 or the like.
+    if (preg_match('/(\d{1,2})\.\s{1,3}(\w{3,10})\s{1,3}(\d{4})/i', drupal_strtolower($input), $matches)) {
+      $month = self::vkffzParseMonthText($matches[2]);
+
+      if ($month) {
+        $timestamp = new DateTime();
+        $timestamp->setDate($matches[3], $month, $matches[1]);
+      }
+    }
+
+    return $timestamp;
+  }
+
+  /**
+   * Try to parse Swiss month names.
+   *
+   * @param string $input
+   *   String to try and parse as a month.
+   * @throws Exception
+   *
+   * @return int Month number.
+   *   Month number.
+   */
+  public static function vkffzParseMonthText($input) {
+    $input = trim(drupal_strtolower($input));
+
+    switch ($input) {
+      case 'januar':
+        return 1;
+      case 'februar':
+        return 2;
+      case 'märz':
+        return 3;
+      case 'april':
+        return 4;
+      case 'mai':
+        return 5;
+      case 'juni':
+        return 6;
+      case 'juli':
+        return 7;
+      case 'august':
+        return 8;
+      case 'september':
+        return 9;
+      case 'oktober':
+        return 10;
+      case 'november':
+        return 11;
+      case 'dezember':
+        return 12;
+      default:
+        throw new Exception('Failed to parse month string: ' . $input);
+    }
   }
 }
