@@ -92,7 +92,7 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // Map published state of the imported row.
     $this->addFieldMapping('status', 'published');
 
-    // Map published state of the imported row.
+    // Map body text into the body field.
     $this->addFieldMapping('fuur_base_body', 'body_text');
 
     // Unmapped destination fields.
