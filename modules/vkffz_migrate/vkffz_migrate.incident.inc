@@ -98,6 +98,7 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
 
     // Map the incident timestamp to its field.
     $this->addFieldMapping('fuur_incident_datetime', 'incident_timestamp');
+    $this->addFieldMapping('fuur_incident_datetime:timezone', 'incident_timezone');
 
     // Unmapped destination fields.
     $this->addUnmigratedDestinations(['revision_uid', 'promote', 'revision', 'log', 'tnid', 'is_new']);
@@ -140,6 +141,7 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
 
       // Convert the incident timestamp to Unix time.
       $current_row->incident_timestamp = $incident_timestamp->getTimestamp();
+      $current_row->incident_timezone = $incident_timestamp->getTimeZone();
     }
     // Unpublish nodes without a valid timestamp and report the error.
     else {
