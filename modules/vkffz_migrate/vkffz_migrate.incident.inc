@@ -94,6 +94,7 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
 
     // Map body text into the body field.
     $this->addFieldMapping('fuur_base_body', 'body_text');
+    $this->addFieldMapping('fuur_base_body:format')->defaultValue('fuur_wysiwyg');
 
     // Map the incident timestamp to its field.
     $this->addFieldMapping('fuur_incident_datetime', 'incident_timestamp');
