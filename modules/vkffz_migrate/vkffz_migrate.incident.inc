@@ -100,6 +100,9 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     $this->addFieldMapping('fuur_incident_datetime', 'incident_timestamp');
     $this->addFieldMapping('fuur_incident_datetime:timezone', 'incident_timezone');
 
+    // Map parsed incident location to its field.
+    $this->addFieldMapping('fuur_incident_location', 'conv_location');
+
     // Unmapped destination fields.
     $this->addUnmigratedDestinations(['revision_uid', 'promote', 'revision', 'log', 'tnid', 'is_new']);
   }
@@ -148,6 +151,15 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
       $current_row->published = 0;
 
       $this->queueMessage('Failed to find incident date for record.');
+    }
+
+    // Try to parse location from intro text.
+    $current_row->conv_location = self::vkffzExtractLocationFromIntroText($current_row->introtext);
+
+    if (empty($current_row->conv_location)) {
+      $current_row->published = 0;
+
+      $this->queueMessage('Failed to find incident location for record.');
     }
 
     // Merge the intro text and the full text into the new body.
@@ -200,6 +212,26 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     }
 
     return $timestamp;
+  }
+
+  /**
+   * Try to extract the incident location from the intro text.
+   *
+   * @param string $introText
+   *   Intro text to parse.
+   *
+   * @return string
+   *   Found location, or empty string.
+   */
+  public static function vkffzExtractLocationFromIntroText($introText) {
+    $found = '';
+    $matches = array();
+
+    if (preg_match('/<strong>([\w\s\d]+)(?:<\/?(?:br|p|strong|font)[^>]*>)*Zeit/i', $introText, $matches)) {
+      $found = trim($matches[1]);
+    }
+
+    return $found;
   }
 
   /**
