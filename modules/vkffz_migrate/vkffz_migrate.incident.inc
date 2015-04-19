@@ -27,8 +27,6 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
       array('track_last_imported' => TRUE)
     );
 
-    //SELECT * FROM jos_content WHERE sectionid = 91 AND catid IN (60, 87, 88, 89, 90, 180, 181, 182)
-
     $query = Database::getConnection('default', 'for_migration')
       ->select('jos_content', 'jt')
       ->fields('jt', array('id', 'asset_id', 'title', 'alias', 'introtext',
