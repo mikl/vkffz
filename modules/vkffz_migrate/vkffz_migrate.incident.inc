@@ -86,6 +86,9 @@ class VkffzIncidentMigration extends VkffzBaseMigration {
     // All imported content will be in German.
     $this->addFieldMapping('language')->defaultValue('de');
 
+    // Don't allow comments on imported nodes.
+    $this->addFieldMapping('comment')->defaultValue(COMMENT_NODE_CLOSED);
+
     // All imported content will be considered to be authored by anonymous.
     $this->addFieldMapping('uid')->defaultValue(0);
 
