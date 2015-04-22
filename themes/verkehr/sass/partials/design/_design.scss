@@ -144,6 +144,27 @@ ul.tabs {
   }
 }
 
+ul.pager {
+  @include inline-block-list;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  a {
+    padding: 5px 10px 2px;
+
+    &:hover {
+      background-color: lighten($zug-blue, 45%);
+      color: $zug-blue;
+    }
+  }
+
+  .pager-current {
+    background-color: $zug-blue;
+    color: $white;
+    padding: 1px 10px 2px;
+  }
+}
+
 .fuur-sponsor-list {
   @include no-bullets;
 

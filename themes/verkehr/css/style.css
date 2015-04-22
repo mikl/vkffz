@@ -12,15 +12,15 @@ img, video {
   font-family: "Fira Sans";
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/fira_sans/firasans-book.eot?1408878462') format("embedded-opentype");
-  src: url('../fonts/fira_sans/firasans-book.eot?1408878462#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-book.woff?1408878462') format("woff"), url('../fonts/fira_sans/firasans-book.ttf?1408878462') format("truetype");
+  src: url('../fonts/fira_sans/firasans-book.eot?1413464673') format("embedded-opentype");
+  src: url('../fonts/fira_sans/firasans-book.eot?1413464673#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-book.woff?1413464673') format("woff"), url('../fonts/fira_sans/firasans-book.ttf?1413464673') format("truetype");
 }
 @font-face {
   font-family: "Fira Sans";
   font-weight: bold;
   font-style: normal;
-  src: url('../fonts/fira_sans/firasans-bold.eot?1408878462') format("embedded-opentype");
-  src: url('../fonts/fira_sans/firasans-bold.eot?1408878462#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-bold.woff?1408878462') format("woff"), url('../fonts/fira_sans/firasans-bold.ttf?1408878462') format("truetype");
+  src: url('../fonts/fira_sans/firasans-bold.eot?1413464673') format("embedded-opentype");
+  src: url('../fonts/fira_sans/firasans-bold.eot?1413464673#iefix') format("embedded-opentype"), url('../fonts/fira_sans/firasans-bold.woff?1413464673') format("woff"), url('../fonts/fira_sans/firasans-bold.ttf?1413464673') format("truetype");
 }
 .site-template-header > .section,
 .site-template-footer > .section, .site-template-main-wrap {
@@ -678,7 +678,7 @@ form .form-item label {
   }
 }
 .fuur-crew-public-profile-list .portrait {
-  background-image: url('../images/portrait-placeholder.png?1416700965');
+  background-image: url('../images/portrait-placeholder.png?1417222786');
   height: 221px;
   width: 166px;
   margin-bottom: 0.5rem;
@@ -912,6 +912,39 @@ ul.tabs a:hover {
 ul.tabs a.active {
   background-color: #edf4f9;
   border-bottom-color: #edf4f9;
+}
+
+ul.pager {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+ul.pager li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+}
+ul.pager a {
+  padding: 5px 10px 2px;
+}
+ul.pager a:hover {
+  background-color: #93d0ff;
+  color: #0062ac;
+}
+ul.pager .pager-current {
+  background-color: #0062ac;
+  color: #edf4f9;
+  padding: 1px 10px 2px;
 }
 
 .fuur-sponsor-list {
