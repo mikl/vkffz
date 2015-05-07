@@ -8,7 +8,7 @@ defaults:
 projects:
   drupal:
     type: "core"
-    version: "7.36"
+    version: "7.37"
     patch:
       # Remove the field_ prefix from field names when creating new fields.
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
@@ -55,8 +55,8 @@ projects:
   strongarm: "2.0"
   token: "1.6"
   transliteration: "3.2"
-  views: "3.10"
-  webform: "4.7"
+  views: "3.11"
+  webform: "4.8"
   wysiwyg:
     type: "module"
     download:
@@ -65,7 +65,7 @@ projects:
       revision: "37dc07db900cac540f30bca5d90bb75951cc314f"
 
   # Theme
-  aurora: "3.6"
+  aurora: "3.5"
 
 libraries:
   ckeditor:
@@ -76,7 +76,7 @@ libraries:
     download:
       type: "git"
       url: "https://github.com/nrk/predis.git"
-      revision: "v0.8.7"
+      revision: "v1.0.1"
   wvega-timepicker:
     download:
       type: "file"
