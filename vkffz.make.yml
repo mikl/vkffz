@@ -71,7 +71,7 @@ libraries:
   ckeditor:
     download:
       type: "file"
-      url: "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.4/ckeditor_4.4.4_full.zip"
+      url: "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip"
   predis:
     download:
       type: "git"
