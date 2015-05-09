@@ -43,7 +43,7 @@ projects:
   magic: "2.2"
   media: "2.0-alpha4"
   menu_block: "2.5"
-  migrate: "2.6"
+  migrate: "2.7"
   module_filter: "2.0"
   panelizer: "3.1"
   panels: "3.5"
