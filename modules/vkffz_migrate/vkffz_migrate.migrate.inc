@@ -22,6 +22,10 @@ function vkffz_migrate_migrate_api() {
         'class_name' => 'VkffzIncidentMigration',
         'group_name' => 'vkffz',
       ],
+      'VkffzNewsDienst' => [
+        'class_name' => 'VkffzNewsDienstMigration',
+        'group_name' => 'vkffz',
+      ],
       'VkffzNewsVerein' => [
         'class_name' => 'VkffzNewsVereinMigration',
         'group_name' => 'vkffz',
