@@ -33,7 +33,7 @@ projects:
     download:
       type: "git"
       url: "https://github.com/mikl/fuur.git"
-      revision: "v1.1.0"
+      revision: "v1.1.1"
   genpass: "1.0"
   html5_tools: "1.2"
   image_resize_filter: "1.14"
