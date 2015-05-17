@@ -13,6 +13,12 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
   const SOURCE_CATEGORY_ID = -1;
 
   /**
+   * @const
+   * Category term name in Drupal.
+   */
+  const DESTINATION_CATEGORY = '';
+
+  /**
    * {@inheritdoc}
    */
   public function __construct($arguments) {
@@ -103,6 +109,9 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
     // Map body text into the body field.
     $this->addFieldMapping('fuur_base_body', 'body_text');
     $this->addFieldMapping('fuur_base_body:format')->defaultValue('fuur_wysiwyg');
+
+    // Set the category based on the defined term for this migration.
+    $this->addFieldMapping('fuur_news_category')->defaultValue($this::DESTINATION_CATEGORY);
 
     // Unmapped destination fields.
     $this->addUnmigratedDestinations(['revision_uid', 'promote', 'revision', 'log', 'tnid', 'is_new']);
