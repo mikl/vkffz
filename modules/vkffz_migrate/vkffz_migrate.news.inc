@@ -124,7 +124,7 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
       $current_row->conv_changed = $current_row->conv_created;
     }
 
-    $current_row->title = self::vkffzStripDateFromTitle($current_row->title);
+    $current_row->title = $this::vkffzStripDateFromTitle($current_row->title);
 
     // Set the published status, defaults to 1.
     $current_row->published = 1;
