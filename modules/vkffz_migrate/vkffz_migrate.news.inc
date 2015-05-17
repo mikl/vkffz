@@ -117,6 +117,8 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
       $current_row->conv_changed = $current_row->conv_created;
     }
 
+    $current_row->title = self::vkffzStripDateFromTitle($current_row->title);
+
     // Set the published status, defaults to 1.
     $current_row->published = 1;
 
@@ -124,6 +126,17 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
     $current_row->body_text = $current_row->introtext . "\r\r" . $current_row->fulljoomlatext;
 
     return TRUE;
+  }
+
+  /**
+   * Remove date from the title, if present.
+   *
+   * @param string $title
+   *
+   * @return string
+   */
+  public static function vkffzStripDateFromTitle($title) {
+    return preg_replace('/^(\s*\d{1,2}\.\d{1,2}\.\d{2})\s*/', '', $title);
   }
 
 }
