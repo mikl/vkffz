@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Class VkffzNewsMigration
+ * Class VkffzNewsVereinMigration
  */
 class VkffzNewsVereinMigration extends VkffzNewsMigration {
 
