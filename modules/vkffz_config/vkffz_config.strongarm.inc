@@ -104,27 +104,7 @@ function vkffz_config_strongarm() {
         'default' => 0,
         'choice' => 1,
       ),
-      'full' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'rss' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'diff_standard' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'token' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
