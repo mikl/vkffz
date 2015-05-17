@@ -12,3 +12,5 @@ dependencies[] = number
 files[] = vkffz_migrate.base_migration.inc
 files[] = vkffz_migrate.incident.inc
 files[] = vkffz_migrate.migrate.inc
+files[] = vkffz_migrate.news.inc
+files[] = vkffz_migrate.news_verein.inc
