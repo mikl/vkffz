@@ -6,7 +6,11 @@
  */
 abstract class VkffzNewsMigration extends VkffzBaseMigration {
 
-  const CATEGORY_ID = -1;
+  /**
+   * @const
+   * Category ID in the original system.
+   */
+  const SOURCE_CATEGORY_ID = -1;
 
   public function __construct($arguments) {
     parent::__construct($arguments);
@@ -33,7 +37,7 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
       ->fields('jt', array('id', 'asset_id', 'title', 'alias', 'introtext',
         'state', 'sectionid', 'catid', 'created', 'modified', 'attribs'))
       // Filter by the categories for the news.
-      ->condition('catid', $this::CATEGORY_ID)
+      ->condition('catid', $this::SOURCE_CATEGORY_ID)
     ;
 
     // Workaround for Joomla! using a MySQL reserved word as a column name. Brilliant.
@@ -41,7 +45,7 @@ abstract class VkffzNewsMigration extends VkffzBaseMigration {
 
     $count_query = Database::getConnection('default', 'for_migration')
       ->select('jos_content', 'jt')
-      ->condition('catid', $this::CATEGORY_ID)
+      ->condition('catid', $this::SOURCE_CATEGORY_ID)
     ;
 
     $count_query->addExpression('COUNT(id)', 'jt');

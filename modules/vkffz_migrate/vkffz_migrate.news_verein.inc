@@ -6,6 +6,9 @@
  */
 class VkffzNewsVereinMigration extends VkffzNewsMigration {
 
-  const CATEGORY_ID = 3;
+  /**
+   * {@inheritdoc}
+   */
+  const SOURCE_CATEGORY_ID = 3;
 
 }
