@@ -18,4 +18,21 @@
   .title {
     margin: 0;
   }
+
+  .post-category a {
+    @include border-radius(3px);
+
+    background-color: rgba($zug-blue, 30%);
+    color: $white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px 5px 0;
+  }
+
+  .post-date {
+    // Add top padding to match the one on .post-category, so they line up
+    // properly.
+    display: inline-block;
+    padding-top: 3px;
+  }
 }
