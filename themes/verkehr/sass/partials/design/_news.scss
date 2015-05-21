@@ -1,0 +1,21 @@
+////////////////////////
+// Styling for news.
+////////////////////////
+
+.pane-fuur-news-list-news-by-category-pane .pane-title {
+  margin-bottom: 5px;
+}
+
+.fuur-news-list {
+  @include no-bullets;
+  margin-top: 0;
+  padding: 0;
+
+  > li {
+    margin-bottom: 5px;
+  }
+
+  .title {
+    margin: 0;
+  }
+}

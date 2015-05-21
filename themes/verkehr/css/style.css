@@ -684,6 +684,27 @@ form .form-item label {
   margin-bottom: 0.5rem;
 }
 
+.pane-fuur-news-list-news-by-category-pane .pane-title {
+  margin-bottom: 5px;
+}
+
+.fuur-news-list {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+.fuur-news-list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+.fuur-news-list > li {
+  margin-bottom: 5px;
+}
+.fuur-news-list .title {
+  margin: 0;
+}
+
 .node .links {
   list-style: none;
   margin: 0;
