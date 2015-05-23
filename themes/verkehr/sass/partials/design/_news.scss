@@ -22,7 +22,7 @@
   .post-category a {
     @include border-radius(3px);
 
-    background-color: rgba($zug-blue, 30%);
+    background-color: rgba($zug-blue, 0.7);
     color: $white;
     display: inline-block;
     font-weight: bold;
