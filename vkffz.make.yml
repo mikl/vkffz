@@ -16,8 +16,8 @@ projects:
   # Modules
   admin_menu: "3.0-rc5"
   borealis: "2.2"
-  ctools: "1.7"
   cache_actions: "2.0-alpha5"
+  ctools: "1.7"
   date: "2.8"
   diff: "3.2"
   elements: "1.4"
