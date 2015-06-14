@@ -158,6 +158,40 @@ function vkffz_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'theme_verkehr_settings';
+  $strongarm->value = array(
+    'toggle_node_user_picture' => '1',
+    'toggle_comment_user_picture' => '1',
+    'toggle_comment_user_verification' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'hide_recomended_modules' => 1,
+    'aurora_min_ie_support' => '9',
+    'aurora_html_tags' => 1,
+    'aurora_typekit_id' => '0',
+    'aurora_livereload' => '0',
+    'aurora_livereload_port' => '',
+    'magic_css_excludes' => ':core
+:contrib
+*fuur_base/plugins/layouts*
+*verkehr/plugins/layouts*
+~admin_menu/*
+~modules/system/system.base.css
+~*calendar/css/*',
+    'magic_footer_js' => 0,
+    'magic_library_head' => 0,
+    'magic_experimental_js' => 0,
+    'magic_js_excludes' => '',
+  );
+  $export['theme_verkehr_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'user_default_timezone';
   $strongarm->value = '0';
   $export['user_default_timezone'] = $strongarm;

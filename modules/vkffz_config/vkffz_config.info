@@ -32,5 +32,6 @@ features[variable][] = site_frontpage
 features[variable][] = site_name
 features[variable][] = site_slogan
 features[variable][] = theme_default
+features[variable][] = theme_verkehr_settings
 features[variable][] = user_default_timezone
 features[variable][] = user_register
