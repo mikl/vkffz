@@ -243,6 +243,41 @@ function vkffz_config_default_page_manager_handlers() {
     $display->content['new-3046ea5b-9596-4300-bb28-700625351c2e'] = $pane;
     $display->panels['header'][1] = 'new-3046ea5b-9596-4300-bb28-700625351c2e';
     $pane = new stdClass();
+    $pane->pid = 'new-b974b517-ddbd-4a3b-9624-eeec1eabb392';
+    $pane->panel = 'sidebar';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'front',
+          'settings' => NULL,
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'admin_title' => 'Chumm doch for front page',
+      'title' => '',
+      'body' => '<a href="http://www.ffz.ch/de/toolbar/interesseffz/">
+  <img src="/profiles/vkffz/themes/verkehr/images/chumm.gif" alt="Chumm doch au id füürwehr!" />
+</a>',
+      'format' => 'fuur_wysiwyg',
+      'substitute' => 0,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'b974b517-ddbd-4a3b-9624-eeec1eabb392';
+    $display->content['new-b974b517-ddbd-4a3b-9624-eeec1eabb392'] = $pane;
+    $display->panels['sidebar'][0] = 'new-b974b517-ddbd-4a3b-9624-eeec1eabb392';
+    $pane = new stdClass();
     $pane->pid = 'new-845f3123-4612-4346-9586-9c03cab87f68';
     $pane->panel = 'sidebar';
     $pane->type = 'menu_tree';
@@ -270,11 +305,11 @@ function vkffz_config_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '845f3123-4612-4346-9586-9c03cab87f68';
     $display->content['new-845f3123-4612-4346-9586-9c03cab87f68'] = $pane;
-    $display->panels['sidebar'][0] = 'new-845f3123-4612-4346-9586-9c03cab87f68';
+    $display->panels['sidebar'][1] = 'new-845f3123-4612-4346-9586-9c03cab87f68';
     $pane = new stdClass();
     $pane->pid = 'new-24eb74bc-95f5-4882-bf06-9720ccdd726e';
     $pane->panel = 'sidebar';
@@ -297,11 +332,11 @@ function vkffz_config_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '24eb74bc-95f5-4882-bf06-9720ccdd726e';
     $display->content['new-24eb74bc-95f5-4882-bf06-9720ccdd726e'] = $pane;
-    $display->panels['sidebar'][1] = 'new-24eb74bc-95f5-4882-bf06-9720ccdd726e';
+    $display->panels['sidebar'][2] = 'new-24eb74bc-95f5-4882-bf06-9720ccdd726e';
     $pane = new stdClass();
     $pane->pid = 'new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
     $pane->panel = 'sidebar';
@@ -327,11 +362,11 @@ function vkffz_config_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
     $display->content['new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872'] = $pane;
-    $display->panels['sidebar'][2] = 'new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
+    $display->panels['sidebar'][3] = 'new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
     $pane = new stdClass();
     $pane->pid = 'new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
     $pane->panel = 'subnav';
