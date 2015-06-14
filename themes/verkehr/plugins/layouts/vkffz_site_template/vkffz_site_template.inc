@@ -6,7 +6,7 @@
 
 $plugin = array(
   'title' => t('Site template'),
-  'theme' => 'vkffz-site-template',
+  'theme' => 'vkffz_site_template',
   'icon' => 'vkffz-site-template.png',
   'css' => 'vkffz-site-template.css',
   'category' => 'VKFFZ',

@@ -138,6 +138,16 @@ function verkehr_preprocess_views_view(&$vars) {
 }
 // */
 
+/**
+ * Override or insert variables into the views template.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ */
+/* -- Delete this line if you want to use this function
+function verkehr_preprocess_vkffz_site_template(&$vars) {
+}
+// */
 
 /**
  * Override or insert css on the site.
