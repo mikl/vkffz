@@ -43,6 +43,7 @@ function vkffz_config_default_page_manager_handlers() {
       'footer' => NULL,
       'closure' => NULL,
       'sidebar' => NULL,
+      'subnav' => NULL,
     ),
   );
   $display->cache = array();
@@ -242,38 +243,38 @@ function vkffz_config_default_page_manager_handlers() {
     $display->content['new-3046ea5b-9596-4300-bb28-700625351c2e'] = $pane;
     $display->panels['header'][1] = 'new-3046ea5b-9596-4300-bb28-700625351c2e';
     $pane = new stdClass();
-    $pane->pid = 'new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
+    $pane->pid = 'new-845f3123-4612-4346-9586-9c03cab87f68';
     $pane->panel = 'sidebar';
     $pane->type = 'menu_tree';
     $pane->subtype = 'main-menu';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => 'main-menu',
-      'parent_mlid' => 0,
       'parent' => 'main-menu:0',
       'title_link' => 0,
-      'admin_title' => 'Main menu, level 2+',
-      'level' => '2',
+      'admin_title' => 'Main menu, level 3+',
+      'level' => '3',
       'follow' => 0,
       'depth' => '0',
       'expanded' => 0,
       'sort' => 0,
+      'menu_name' => 'main-menu',
+      'parent_mlid' => '0',
       'override_title' => 0,
       'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
-    $display->content['new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf'] = $pane;
-    $display->panels['sidebar'][0] = 'new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
+    $pane->uuid = '845f3123-4612-4346-9586-9c03cab87f68';
+    $display->content['new-845f3123-4612-4346-9586-9c03cab87f68'] = $pane;
+    $display->panels['sidebar'][0] = 'new-845f3123-4612-4346-9586-9c03cab87f68';
     $pane = new stdClass();
     $pane->pid = 'new-24eb74bc-95f5-4882-bf06-9720ccdd726e';
     $pane->panel = 'sidebar';
@@ -331,6 +332,40 @@ function vkffz_config_default_page_manager_handlers() {
     $pane->uuid = 'ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
     $display->content['new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872'] = $pane;
     $display->panels['sidebar'][2] = 'new-ed8e23e9-7dc8-4d34-b58a-f97afbec6872';
+    $pane = new stdClass();
+    $pane->pid = 'new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
+    $pane->panel = 'subnav';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'main-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'menu_name' => 'main-menu',
+      'parent_mlid' => '0',
+      'parent' => 'main-menu:0',
+      'title_link' => 0,
+      'admin_title' => 'Main menu, level 2',
+      'level' => '2',
+      'follow' => 0,
+      'depth' => '1',
+      'expanded' => 0,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+      'style' => 'default',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
+    $display->content['new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf'] = $pane;
+    $display->panels['subnav'][0] = 'new-e98f6a52-790a-4ca1-9ca1-dc94d68877bf';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-69f5b37b-6fa3-4d33-a953-4e753579ed44';
   $handler->conf['display'] = $display;

@@ -12,6 +12,14 @@
 </header>
 <?php endif; ?>
 
+<?php if ($content['subnav']): ?>
+<header class="site-template-subnav" role="banner">
+  <div class="section">
+    <?php print render($content['subnav']); ?>
+  </div>
+</header>
+<?php endif; ?>
+
 <div class="site-template-main-wrap">
   <main class="site-template-main">
     <?php print render($content['content']); ?>

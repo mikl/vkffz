@@ -109,6 +109,37 @@ a {
   }
 }
 
+.site-template-subnav {
+  .menu {
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      margin-left: 1.5em;
+
+      &:first-child {
+        list-style-type: none;
+        margin-left: 0;
+      }
+    }
+
+    a {
+      border-bottom: 3px solid $white;
+      display: inline-block;
+      padding: 5px 0 0;
+
+      &:hover {
+        border-bottom-color: $zug-blue;
+      }
+
+      &.active-trail {
+        border-bottom-color: $black;
+      }
+    }
+  }
+}
+
 ul.tabs {
   @include no-bullets;
 

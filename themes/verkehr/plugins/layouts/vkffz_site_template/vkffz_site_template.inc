@@ -12,6 +12,7 @@ $plugin = array(
   'category' => 'VKFFZ',
   'regions' => array(
     'header' => t('Header'),
+    'subnav' => t('Sub-navigation'),
     'content' => t('Content'),
     'sidebar' => t('Sidebar'),
     'footer' => t('Footer'),
