@@ -24,11 +24,11 @@ projects:
   elements: "1.4"
   entity: "1.6"
   entitycache: "1.2"
-  features: "2.5"
+  features: "2.6"
   fences: "1.0"
   field_collection: "1.0-beta8"
   field_formatter_settings: "1.1"
-  file_entity: "2.0-beta1"
+  file_entity: "2.0-beta2"
   fuur:
     type: "module"
     download:
@@ -37,36 +37,36 @@ projects:
       revision: "v1.1.5"
   genpass: "1.0"
   html5_tools: "1.2"
-  image_resize_filter: "1.14"
+  image_resize_filter: "1.15"
   jquery_update: "2.6"
   l10n_update: "2.0"
   link: "1.3"
   magic: "2.2"
-  media: "2.0-alpha4"
-  menu_block: "2.5"
+  media: "2.0-beta1"
+  menu_block: "2.7"
   migrate: "2.7"
   module_filter: "2.0"
   panelizer: "3.1"
   panels: "3.5"
   panels_everywhere: "1.0-rc2"
   pathauto: "1.2"
-  redirect: "1.0-rc1"
+  redirect: "1.0-rc3"
   redis: "2.11"
   rules: "2.9"
   strongarm: "2.0"
   token: "1.6"
   transliteration: "3.2"
   views: "3.11"
-  webform: "4.9"
+  webform: "4.10"
   wysiwyg:
     type: "module"
     download:
       type: "git"
       url: "http://git.drupal.org/project/wysiwyg.git"
-      revision: "37dc07db900cac540f30bca5d90bb75951cc314f"
+      revision: "727a20827cfae1a839330cf66eca91420cb1b89b"
 
   # Theme
-  aurora: "3.5"
+  aurora: "3.6"
 
 libraries:
   ckeditor:
