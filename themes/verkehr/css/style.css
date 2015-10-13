@@ -744,19 +744,6 @@ form .form-item label {
 .node-fuur-incident .field-name-fuur-incident-datetime {
   display: inline;
 }
-.node-fuur-incident .fuur-image-box {
-  min-height: 1.5rem;
-  position: relative;
-}
-.node-fuur-incident .fuur-image-box .type-label {
-  background-color: rgba(0, 49, 86, 0.7);
-  color: rgba(237, 244, 249, 0.7);
-  font-weight: bold;
-  padding: 0.25rem 0.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .view-fuur-front-page-teasers .node {
   border-bottom: 1px solid #b9c0c6;

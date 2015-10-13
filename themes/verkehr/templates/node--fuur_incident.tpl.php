@@ -17,11 +17,7 @@
     <?php print render($content['fuur_incident_datetime']); ?>
   </header>
 
-  <?php if (!empty($content['fuur_base_images'])): ?>
-    <div class="fuur-image-box">
-      <?php print render($content['fuur_base_images']); ?>
-    </div>
-  <?php endif; ?>
+  <?php print render($content['fuur_base_images']); ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
