@@ -17,11 +17,11 @@
     <?php print render($content['fuur_incident_datetime']); ?>
   </header>
 
-  <div class="fuur-image-box">
-    <span class="type-label"><?php echo t('Operation'); ?></span>
-
-    <?php print render($content['fuur_base_images']); ?>
-  </div>
+  <?php if (!empty($content['fuur_base_images'])): ?>
+    <div class="fuur-image-box">
+      <?php print render($content['fuur_base_images']); ?>
+    </div>
+  <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
