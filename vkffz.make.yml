@@ -8,7 +8,7 @@ defaults:
 projects:
   drupal:
     type: "core"
-    version: "7.39"
+    version: "7.41"
     patch:
       # Remove the field_ prefix from field names when creating new fields.
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
@@ -23,10 +23,10 @@ projects:
   diff: "3.2"
   elements: "1.4"
   entity: "1.6"
-  entitycache: "1.2"
-  features: "2.6"
+  entitycache: "1.5"
+  features: "2.7"
   fences: "1.2"
-  field_collection: "1.0-beta8"
+  field_collection: "1.0-beta10"
   field_formatter_settings: "1.1"
   file_entity: "2.0-beta2"
   fuur:
@@ -36,11 +36,11 @@ projects:
       url: "https://github.com/mikl/fuur.git"
       revision: "v1.1.5"
   genpass: "1.0"
-  html5_tools: "1.2"
+  html5_tools: "1.3"
   image_resize_filter: "1.16"
-  jquery_update: "2.6"
+  jquery_update: "2.7"
   l10n_update: "2.0"
-  link: "1.3"
+  link: "1.4"
   magic: "2.2"
   media: "2.0-beta1"
   menu_block: "2.7"
@@ -57,8 +57,8 @@ projects:
   strongarm: "2.0"
   token: "1.6"
   transliteration: "3.2"
-  views: "3.11"
-  webform: "4.11"
+  views: "3.13"
+  webform: "4.12"
   wysiwyg:
     type: "module"
     download:
