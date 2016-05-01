@@ -8,7 +8,7 @@ defaults:
 projects:
   drupal:
     type: "core"
-    version: "7.41"
+    version: "7.43"
     patch:
       # Remove the field_ prefix from field names when creating new fields.
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
@@ -22,11 +22,11 @@ projects:
   date: "2.9"
   diff: "3.2"
   elements: "1.4"
-  entity: "1.6"
+  entity: "1.7"
   entitycache: "1.5"
-  features: "2.7"
+  features: "2.10"
   fences: "1.2"
-  field_collection: "1.0-beta10"
+  field_collection: "1.0-beta11"
   field_formatter_settings: "1.1"
   file_entity: "2.0-beta2"
   fuur:
