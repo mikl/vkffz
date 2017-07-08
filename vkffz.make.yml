@@ -8,7 +8,7 @@ defaults:
 projects:
   drupal:
     type: "core"
-    version: "7.53"
+    version: "7.56"
     patch:
       # Remove the field_ prefix from field names when creating new fields.
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
@@ -19,7 +19,7 @@ projects:
   cache_actions: "2.0-alpha5"
   calendar: "3.5"
   ctools: "1.12"
-  date: "2.9"
+  date: "2.10"
   diff: "3.3"
   elements: "1.4"
   entity: "1.8"
@@ -28,7 +28,7 @@ projects:
   fences: "1.2"
   field_collection: "1.0-beta12"
   field_formatter_settings: "1.1"
-  file_entity: "2.0-beta3"
+  file_entity: "2.3"
   fuur:
     type: "module"
     download:
@@ -42,29 +42,24 @@ projects:
   l10n_update: "2.1"
   link: "1.4"
   magic: "2.3"
-  media: "2.0-rc3"
+  media: "2.9"
   menu_block: "2.7"
   migrate: "2.8"
-  module_filter: "2.0"
+  module_filter: "2.1"
   panelizer: "3.4"
-  panels: "3.8"
+  panels: "3.9"
   panels_everywhere: "1.0-rc2"
   pathauto: "1.3"
   redirect: "1.0-rc3"
   redis: "2.11"
-  rules: "2.9"
+  rules: "2.10"
   speedy: "1.20"
   strongarm: "2.0"
-  token: "1.6"
+  token: "1.7"
   transliteration: "3.2"
-  views: "3.14"
-  webform: "4.14"
-  wysiwyg:
-    type: "module"
-    download:
-      type: "git"
-      url: "http://git.drupal.org/project/wysiwyg.git"
-      revision: "727a20827cfae1a839330cf66eca91420cb1b89b"
+  views: "3.16"
+  webform: "4.15"
+  wysiwyg: "2.4"
 
   # Theme
   aurora: "3.6"
