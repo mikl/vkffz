@@ -26,6 +26,7 @@ regions[footer]       = 'Footer'
 ; ========================================
 
 stylesheets[all][] = 'css/style.css'
+stylesheets[all][] = 'css/fuur_slider.css'
 stylesheets[print][] = 'css/print.css'
 
 ; ========================================

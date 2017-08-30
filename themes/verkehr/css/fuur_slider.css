@@ -1,0 +1,5 @@
+/* Fix visual glitch that makes the slider too tall until all pictures
+   have been loaded */
+.pane-bundle-fuur-slider .slick-list {
+  max-height: 477px;
+}
