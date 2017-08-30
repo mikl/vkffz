@@ -21,6 +21,5 @@ function vkffz_config_menu_default_menu_custom() {
   t('Menu links for the footer.');
   t('Secondary menu');
 
-
   return $menus;
 }
