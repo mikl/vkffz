@@ -14,7 +14,7 @@ projects:
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
 
   # Modules
-  admin_menu: "3.0-rc5"
+  admin_menu: "3.0-rc6"
   borealis: "2.2"
   cache_actions: "2.0-alpha5"
   calendar: "3.5"
@@ -26,7 +26,7 @@ projects:
   entitycache: "1.5"
   features: "2.11"
   fences: "1.2"
-  field_collection: "1.0-beta12"
+  field_collection: "1.0-beta13"
   field_formatter_settings: "1.1"
   fieldable_panels_panes: "1.11"
   file_entity: "2.25"
@@ -45,7 +45,7 @@ projects:
   link: "1.5"
   magic: "2.3"
   media: "2.21"
-  menu_block: "2.7"
+  menu_block: "2.8"
   migrate: "2.9"
   module_filter: "2.1"
   panelizer: "3.4"
@@ -54,14 +54,14 @@ projects:
   pathauto: "1.3"
   redirect: "1.0-rc3"
   redis: "2.10"
-  rules: "2.11"
+  rules: "2.12"
   slick: "2.0"
   speedy: "1.20"
   strongarm: "2.0"
   token: "1.7"
   transliteration: "3.2"
   views: "3.20"
-  webform: "4.18"
+  webform: "4.19"
   wysiwyg: "2.5"
 
   # Theme
