@@ -8,7 +8,7 @@ defaults:
 projects:
   drupal:
     type: "core"
-    version: "7.63"
+    version: "7.65"
     patch:
       # Remove the field_ prefix from field names when creating new fields.
       - https://www.drupal.org/files/issues/1393094-remove-field-prefix-D7_1.patch
@@ -18,7 +18,7 @@ projects:
   borealis: "2.2"
   cache_actions: "2.0-alpha5"
   calendar: "3.5"
-  ctools: "1.14"
+  ctools: "1.15"
   date: "2.10"
   diff: "3.4"
   elements: "1.5"
@@ -28,7 +28,7 @@ projects:
   fences: "1.2"
   field_collection: "1.0-beta13"
   field_formatter_settings: "1.1"
-  fieldable_panels_panes: "1.11"
+  fieldable_panels_panes: "1.13"
   file_entity: "2.25"
   fuur:
     type: "module"
@@ -42,7 +42,7 @@ projects:
   jquery_update: "2.7"
   l10n_update: "2.2"
   libraries: "2.5"
-  link: "1.5"
+  link: "1.6"
   magic: "2.3"
   media: "2.21"
   menu_block: "2.8"
@@ -60,7 +60,7 @@ projects:
   strongarm: "2.0"
   token: "1.7"
   transliteration: "3.2"
-  views: "3.20"
+  views: "3.21"
   webform: "4.19"
   wysiwyg: "2.5"
 
