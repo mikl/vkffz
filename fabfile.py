@@ -15,7 +15,7 @@ SITE_PATH = DEPLOY_PATH + '/current'
 DRUSH_MAKE_TEMPLATE = """
 api = 2
 core = 7.x
-projects[drupal][version] = 7.63
+projects[drupal][version] = 7.66
 
 projects[{profile}][type] = profile
 projects[{profile}][download][type] = git
