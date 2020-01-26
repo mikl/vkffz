@@ -21,7 +21,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    ffi (1.9.3)
+    ffi (1.12.1)
     modular-scale (2.0.5)
       compass (>= 0.12.0)
     multi_json (1.10.1)
