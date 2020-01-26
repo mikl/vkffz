@@ -55,7 +55,7 @@ projects:
   redirect: "1.0-rc3"
   redis: "2.10"
   rules: "2.12"
-  slick: "2.2"
+  slick: "2.1"
   speedy: "1.20"
   strongarm: "2.0"
   token: "1.7"
